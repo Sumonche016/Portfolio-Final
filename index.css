@@ -71,3 +71,10 @@
   color: #fff;
   transition: all 0.2s;
 }
+
+.text-failure {
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: rgba(198, 201, 216, 0.75) !important;
+}
