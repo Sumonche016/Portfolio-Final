@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumon</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script
-      src="https://kit.fontawesome.com/459e15cfa2.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./sass/pop.css" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -32,12 +29,15 @@
   </head>
 
   <body id="home">
-    <header class="md:py-5" id="header">
+    <header class="py-3" id="header">
       <div class="w-11/12 md:w-[80%] lg:w-[85%] xl:w-[85%] mx-auto my-0">
         <nav class="flex justify-between items-center none">
           <div class="flex items-center">
             <img src="./image/logo-symbol-dark.png" alt="" />
-            <span class="text-3xl text-white ml-2 font-medium">SUMON</span>
+            <span
+              class="text-2xl md:text-3xl text-white ml-2 text-logo font-medium"
+              >SUMON</span
+            >
           </div>
 
           <div>
@@ -48,26 +48,28 @@
               <div class="md:hidden lg:hidden cancel-btn">
                 <i class="fas fa-times text-white cursor-pointer"></i>
               </div>
-              <li class="mb-2 md:mb-0">
+              <li class="scroll-link mb-2 md:mb-0">
                 <a href="#home">Home</a>
               </li>
-              <li class="mb-2 md:mb-0">
+              <li class="scroll-link mb-2 md:mb-0">
                 <a href="#me">About Me</a>
               </li>
-              <li class="mb-2 md:mb-0">
+              <li class="scroll-link mb-2 md:mb-0">
                 <a href="#skill">Skill</a>
               </li>
-              <li class="mb-2 md:mb-0">
+              <li class="scroll-link mb-2 md:mb-0">
                 <a href="#port">Portfolio</a>
               </li>
 
-              <li class="mb-2 md:mb-0">
+              <li class="scroll-link mb-2 md:mb-0">
                 <a href=" #hire">Contact Me</a>
               </li>
             </ul>
 
             <div class="md:hidden lg:hidden menu-btn">
-              <i class="fas fa-bars cursor-pointer text-white text-3xl"></i>
+              <i
+                class="fas fa-bars cursor-pointer text-white text-3xl scroll-btn"
+              ></i>
             </div>
           </div>
         </nav>
@@ -101,7 +103,7 @@
 
     <!-- About me  -->
 
-    <section id="me" class="bg-white about-me">
+    <section id="me" class="bg-[#F5F5F5] about-me">
       <div
         class="w-full md:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-2"
         data-aos="fade-up"
@@ -254,243 +256,107 @@
     </section>
 
     <!-- portfolio -->
-    <section id="port" class="py-20 example-classname">
-      <div class="w-11/12 md:w-[85%] mx-auto my-0">
-        <p class="text-[#9F9F9F] text-lg">please check my portfolio</p>
-        <h1 class="text-5xl text-white font-bold mt-3">My Portfolio</h1>
+    <section
+      id="port"
+      class="example-classname mt-[-20vh] py-[20rem] bg-[#F5F5F5]"
+    >
+      <div class="w-11/12 md:w-[80%] mx-auto my-0">
+        <p class="text-[#010101] text-lg">please check my portfolio</p>
+        <h1 class="text-5xl text-black font-bold mt-3">My Portfolio</h1>
         <div class="w-[5rem] h-[0.25rem] bg-red mt-[1.25rem]"></div>
 
         <!-- grid start -->
 
-        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div
+          class="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
           <div
-            class="bg-[#18191A] p-4 shadow-lg"
+            class="p-4 shadow bg-white"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
+              src="./image/trillo.png"
               alt=" "
-              class="rounded-lg mx-auto my-0"
+              class="mx-auto my-0 image-clip"
             />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Production Site</h1>
-              <a target="_blank" href="https://sumonche016.github.io/jakanaka/">
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-[#18191A] p-4 shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
-              alt=" "
-              class="rounded-lg mx-auto my-0"
-            />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Admin Panel</h1>
-              <a
-                target="_blank"
-                href="https://sumonche016.github.io/portfolio3/"
+            <ul class="card-details mt-2">
+              <li class="p-4 text-center">
+                <span class="mr-2">01</span> Node Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">02</span>React Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">03</span>Next JS
+              </li>
+              <button
+                class="mt-7 mb-5 border-2 border-red hover:text-white rounded px-12 shadow py-3 hover:bg-red transition-all duration-500"
               >
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
+                <a href="#popup1" class="">Details</a>
+              </button>
+            </ul>
           </div>
           <div
-            class="bg-[#18191A] p-4 shadow-lg"
+            class="p-4 shadow bg-white"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
+              src="./image/trillo.png"
               alt=" "
-              class="rounded-lg mx-auto my-0"
+              class="mx-auto my-0 image-clip"
             />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Admin Panel</h1>
-              <a
-                target="_blank"
-                href="https://sumonche016.github.io/portfolio3/"
+            <ul class="card-details mt-2">
+              <li class="p-4 text-center">
+                <span class="mr-2">01</span> Node Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">02</span>React Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">03</span>Next JS
+              </li>
+              <button
+                class="mt-7 mb-5 border-2 border-red hover:text-white rounded px-10 py-3 hover:bg-red transition-all duration-500 shadow-md"
               >
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
+                <a href="" class="">Details</a>
+              </button>
+            </ul>
           </div>
           <div
-            class="bg-[#18191A] p-4 shadow-lg"
+            class="p-4 shadow bg-white"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
+              src="./image/trillo.png"
               alt=" "
-              class="rounded-lg mx-auto my-0"
+              class="mx-auto my-0 image-clip"
             />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Admin Panel</h1>
-              <a
-                target="_blank"
-                href="https://sumonche016.github.io/portfolio3/ "
+            <ul class="card-details mt-2">
+              <li class="p-4 text-center">
+                <span class="mr-2">01</span> Node Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">02</span>React Js
+              </li>
+              <li class="p-4 text-center">
+                <span class="mr-2">03</span>Next JS
+              </li>
+              <button
+                class="mt-7 mb-5 border-2 border-red hover:text-white rounded px-10 py-3 hover:bg-red transition-all duration-500 shadow-md"
               >
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-[#18191A] p-4 shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
-              alt=" "
-              class="rounded-lg mx-auto my-0"
-            />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Admin Panel</h1>
-              <a target="_blank" href="https://sumonche016.github.io/trilo/ ">
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="bg-[#18191A] p-4 shadow-lg"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
-            <img
-              src="./image/blog.6128a5fce5ca56c9ae83.png "
-              alt=" "
-              class="rounded-lg mx-auto my-0"
-            />
-            <div class="text-white flex justify-between mt-6 items-center">
-              <h1 class="text-2xl font-bold">Penguin Projext</h1>
-              <a
-                target="_blank"
-                href="https://sumonche016.github.io/penguin--bootstarp/ "
-              >
-                <svg
-                  stroke="currentColor "
-                  fill="currentColor "
-                  stroke-width="0 "
-                  viewBox="0 0 496 512 "
-                  height="2em "
-                  width="2em "
-                  xmlns="http://www.w3.org/2000/svg "
-                >
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2
-                                2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8
-                                8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9
-                                2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16
-                                17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9
-                                2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6
-                                1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z "
-                  ></path>
-                </svg>
-              </a>
-            </div>
+                <a href="" class="">Details</a>
+              </button>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- my service -->
-    <section class="py-20 example-classname">
+    <section class="py-20 example-classname bg-black">
       <h1 class="text-5xl text-white font-bold mt-3 text-center">My Service</h1>
       <div class="w-[5rem] h-[0.25rem] bg-red mt-[1.3rem] mx-auto my-0"></div>
 
@@ -598,7 +464,7 @@
 
     <!--  hire me section -->
 
-    <section id="hire" class="py-20 example-classname">
+    <section id="hire" class="py-20 example-classname bg-black">
       <div class="w-11/12 md:w-[85%] mx-auto my-0">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10"
@@ -670,7 +536,7 @@
       </div>
     </section>
 
-    <footer class="lg:py-5 external">
+    <footer class="lg:py-5 external bg-black">
       <div class="w-11/12 mx-auto my-0">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 md:gap-10">
           <div class=" ">
@@ -711,12 +577,72 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup1">
+      <div
+        class="popup__content md:w-[75%] w-full md:h-[40rem] md:h-[80vh] h-[90vh]"
+      >
+        <a
+          class="popup__close md:top-[1rem] md:right-[2.5rem] right-[9px] bottom-[30%]"
+          href="#port"
+          >&times;</a
+        >
+        <div class="composition md:w-[60%] w-full h-[55%] mx-auto pt-4">
+          <img
+            src="./image/scrren3.png"
+            alt="Photo 1"
+            class="composition__photo composition__photo--p1"
+          />
+          <img
+            src="./image/screen2.png"
+            alt="Photo 2"
+            class="composition__photo composition__photo--p2"
+          />
+          <img
+            src="./image/scrren3.png"
+            alt="Photo 3"
+            class="composition__photo composition__photo--p3"
+          />
+        </div>
+        <div class="h-[45%] w-11/12 mx-auto pb-3">
+          <h1 class="text-[#1F1F25] text-[30px]">Web Site Features</h1>
+
+          <ul class="list-disc pl-6 text-[#717173]">
+            <li>Authentication system</li>
+            <li>Varius service</li>
+            <li>log in functionality</li>
+            <li>log in functionality</li>
+            <li>google log in</li>
+          </ul>
+          <div>
+            <button
+              class="mt-4 border-2 border-red hover:text-white rounded px-2 py-2 hover:bg-red transition-all duration-500 shadow-md"
+            >
+              <a href="" class="">Live Site</a>
+            </button>
+            <button
+              class="mt-4 md:mx-2 border-2 border-red hover:text-white rounded px-2 py-2 hover:bg-red transition-all duration-500 shadow-md"
+            >
+              <a href="" class="">Client Code</a>
+            </button>
+            <button
+              class="mt-4 border-2 border-red hover:text-white rounded px-2 py-2 hover:bg-red transition-all duration-500 shadow-md"
+            >
+              <a href="" class="">Server Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="./javascript/jquery.min.js"></script>
     <script src="./javascript/ripples.js"></script>
     <script src="./javascript/onepag.js"></script>
-
+    <script
+      src="https://kit.fontawesome.com/459e15cfa2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./javascript/main.js "></script>
   </body>
 </html>

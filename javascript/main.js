@@ -15,7 +15,7 @@ cancel.onclick = () => {
 
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
 
     let header = document.getElementById('header');
     let windowPosition = window.scrollY > 0;
@@ -25,7 +25,7 @@ window.addEventListener('scroll', function() {
 
 
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.ripples').ripples({
         resolution: 512,
         dropRadius: 15,
@@ -40,3 +40,4 @@ $('#nav').onePageNav({
 });
 
 AOS.init();
+

@@ -1,7 +1,17 @@
 .scrolling-active {
   background-color: rgb(252, 252, 252);
-  background-color: rgb(2, 2, 2);
+  /* background-color: rgb(2, 2, 2); */
   box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+.scrolling-active .text-logo {
+  color: #1f1f25;
+}
+
+.scrolling-active .scroll-link {
+  color: #1f1f25;
+}
+.scrolling-active .scroll-btn {
+  color: #1f1f25;
 }
 
 #header {
@@ -77,4 +87,35 @@
   margin-bottom: 10px;
   font-size: 15px;
   color: rgba(198, 201, 216, 0.75) !important;
+}
+
+.mystyle {
+  color: blue;
+}
+
+.card-details li {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-details {
+  width: 80%;
+  height: 50%;
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img-clip {
+  background-image: url(./image/trillo.png);
+  background-size: cover;
+  height: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.shadow {
+  box-shadow: 0 5px 20px rgb(0 0 0/6%) !important;
 }
